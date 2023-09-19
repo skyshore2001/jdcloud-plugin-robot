@@ -1,0 +1,38 @@
+<form title="AI助手" style="width:600px;height:600px;padding:0" wui-script="dlgRobot.js" my-initfn="initDlgRobot">
+<style>
+#content {
+	width: 100%;
+	height: calc(100% - 110px);
+	border: 1px solid #dddddd;
+	background-color: #fdfdfd;
+	overflow: scroll;
+}
+
+#content .req {
+	margin: 5px 20px 5px 0;
+	padding: 5px;
+	background-color: #e3e3f5;
+	white-space: pre-wrap;
+}
+
+#content .res {
+	margin: 5px 0 5px 20px;
+	padding: 5px;
+	background-color: #f5e3e3;
+	white-space: pre-wrap;
+}
+
+#req {
+	width: 100%;
+	height: 100px;
+	margin-top: 5px;
+}
+
+#dlgRobot + .dialog-button .l-btn:first-of-type {
+	float: left;
+	border: 1px solid #ccc;
+}
+</style>
+<div id="content"></div>
+<textarea id="req"></textarea>
+</form>
